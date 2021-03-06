@@ -69,7 +69,7 @@ try:
     cursor.execute(retrive_query)
     rows = cursor.fetchall()
     for row in rows:
-       print(row)
+        print(row)
 
     # Usuwanie tabeli
     # drop_table = "DROP TABLE IF EXISTS bigquery_DDL.02_table;"
