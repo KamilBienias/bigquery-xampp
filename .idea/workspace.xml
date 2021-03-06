@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421194c8-8d21-4d8a-9c1c-4db2808b8745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/bigquery-course.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/boolean_types.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/date_time_types.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/google.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/numeric_types.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/people.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/string_types.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_wygenerowanie_danych/tips.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/01_numeryczne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/01_numeryczne.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/02_logiczne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/02_logiczne.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/03_tekstowe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/03_tekstowe.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/04_data_czas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_typy_danych/04_data_czas.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/01_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/02_creating_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/03_insert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/04_insert_from_df_moje.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/05_select.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/06_delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/07_drop_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xampp/tutorialslides/08_update.py" afterDir="false" />
+    <list default="true" id="421194c8-8d21-4d8a-9c1c-4db2808b8745" name="Default Changelist" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/01_typy_danych/04_data_czas.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_typy_danych/04_data_czas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +40,7 @@
       <recent name="$PROJECT_DIR$/00_wygenerowanie_danych" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.data">
     <configuration name="01_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,8 +62,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bigquery-course" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00_wygenerowanie_danych" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_wygenerowanie_danych/data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data" />
         <item itemvalue="Python.01_connection" />
       </list>
     </recent_temporary>
@@ -108,6 +99,14 @@
       <option name="presentableId" value="Default" />
       <updated>1614878296518</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1615033598407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615033598407</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,5 +120,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
