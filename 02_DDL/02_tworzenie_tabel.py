@@ -34,7 +34,7 @@ try:
 
     # tworzenie tabeli
     createTableSql = """CREATE OR REPLACE TABLE bigquery_DDL.02_table(
-    id INT,
+    id INT NOT NULL,
     name VARCHAR(30),
     has_married BOOLEAN,
     date_of_birth DATE,
