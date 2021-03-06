@@ -25,7 +25,7 @@ czas w BigQuery:
 
 try:
     #database connection
-    connection = pymysql.connect(host="localhost",user="root",passwd="",database="bigquery" )
+    connection = pymysql.connect(host="localhost",user="root",passwd="",database="bigquery_data_types" )
     cursor = connection.cursor()
     # some other statements  with the help of cursor
     print("Connection successful")
