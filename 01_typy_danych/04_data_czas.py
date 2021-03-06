@@ -1,4 +1,4 @@
-# Etap5. Odcinek: Tekstowe typy danych
+# Etap5. Odcinek: Data i czas
 
 # uruchamiac z terminala:
 # python3 04_data_czas.py
