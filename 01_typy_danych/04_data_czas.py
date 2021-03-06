@@ -80,7 +80,7 @@ try:
     cursor.execute(columns_names_query)
     rows = cursor.fetchall()
     for row in rows:
-       print(row[0], end=" ")
+        print(row[0], end=" ")
     print()
     # zapytanie do wyswietlenia wszystkich wierszy i kolumn
     retrive_query = "SELECT * FROM 04_date_time;"
