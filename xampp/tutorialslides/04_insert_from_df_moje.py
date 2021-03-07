@@ -6,7 +6,10 @@ import pymysql
 import pandas as pd
 
 #database connection
-connection = pymysql.connect(host="localhost",user="root",passwd="",database="bigquery_data_types" )
+connection = pymysql.connect(host="localhost",
+                             user="root",
+                             passwd="",
+                             database="bigquery_data_types" )
 cursor = connection.cursor()
 # some other statements  with the help of cursor
 print("Connection successful")
@@ -21,18 +24,18 @@ print("Connection successful")
 
 # sam wymyslilem jak wstawiac wiersze z df do bazy
 df = pd.DataFrame(data={
-    "name": ["Robert", "Grzegorz"],
-    "track": ["track R", "track G"]
+    "name": ["Albert", "Bolek"],
+    "track": ["funky", "jazz"]
 })
 print(df)
 print()
 print(df.info())
 print()
 
-insert_row_query = "INSERT INTO Artists(NAME, TRACK) VALUES(%s, %s);"
+insert_row_query = "INSERT INTO bigquery_data_types.Artists(NAME, TRACK) VALUES(%s, %s);"
 
 for row_number in range(len(df.index)):
-    # print(tuple(df.loc[row_number]))
+    # print(list(df.loc[row_number]))
     row_to_insert = list(df.loc[row_number])
     cursor.execute(insert_row_query, row_to_insert)
 
