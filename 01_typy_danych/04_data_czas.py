@@ -23,9 +23,28 @@ czas w BigQuery:
     - reprezentuje punkt w czasie z mikrosekundową precyzją
 """
 
+def show_table(base_and_table_name):
+    # pokazuje nazwy kolumn w tabeli
+    print("Tabela " + base_and_table_name + " w bazie =")
+    columns_names_query = "SHOW COLUMNS FROM " + base_and_table_name + ";"
+    cursor.execute(columns_names_query)
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row[0], end=" ")
+    print()
+    retrive_query = "SELECT * FROM " + base_and_table_name + ";"
+    # wyswietla wiersz po wierszu
+    cursor.execute(retrive_query)
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
+
 try:
     #database connection
-    connection = pymysql.connect(host="localhost",user="root",passwd="",database="bigquery_data_types" )
+    connection = pymysql.connect(host="localhost",
+                                 user="root",
+                                 passwd="",
+                                 database="bigquery_data_types")
     cursor = connection.cursor()
     # some other statements  with the help of cursor
     print("Connection successful")
@@ -66,45 +85,16 @@ try:
     print()
     print(df.info())
 
-    # wstawianie df do tabeli
-    insert_row_query = "INSERT INTO 04_date_time(var1, var2, var3, var4, var5, var6) VALUES(%s, %s, %s, %s, %s, %s);"
+    # moje wstawianie df do tabeli
+    # (wtedy trzeba rzutowac object na datetime i boolean na int)
+    insert_row_query = "INSERT INTO bigquery_data_types.04_date_time(var1, var2, var3, var4, var5, var6) VALUES(%s, %s, %s, %s, %s, %s);"
     for row_number in range(len(df.index)):
         row_to_insert = list(df.loc[row_number])
         cursor.execute(insert_row_query, row_to_insert)
     print("Rows inserted to the table")
 
     print()
-    print("Tabela w bazie =")
-    # pokazuje nazwy kolumn w tabeli
-    columns_names_query = "SHOW COLUMNS FROM 04_date_time;"
-    cursor.execute(columns_names_query)
-    rows = cursor.fetchall()
-    for row in rows:
-        print(row[0], end=" ")
-    print()
-    # zapytanie do wyswietlenia wszystkich wierszy i kolumn
-    retrive_query = "SELECT * FROM 04_date_time;"
-    # wyswietla wiersz po wierszu
-    cursor.execute(retrive_query)
-    rows = cursor.fetchall()
-    for row in rows:
-       print(row)
-
-    # print()
-    # print("Obok oryginalnych kolumn wyswietla po rzutowaniu var1 string na int i float")
-    # query = """
-    # SELECT
-    #   var1,
-    #   CAST(var1 AS INT) AS var1_int,
-    #   CAST(var1 AS FLOAT) AS var1_float,
-    #   var2,
-    #   var3
-    # FROM
-    #   `03_text`; """
-    # cursor.execute(query)
-    # rows = cursor.fetchall()
-    # for row in rows:
-    #    print(row)
+    show_table("bigquery_data_types.04_date_time")
 
     # print()
     #commiting the connection then closing it.
