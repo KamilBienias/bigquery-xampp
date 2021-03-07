@@ -49,6 +49,11 @@ try:
     print(df.dtypes)
     print()
 
+    # print("Inny sposow zamiany boolean na int (zamiast ponizszego)")
+    # df["var2"] = df["var2"].astype("int8")
+    # df["var3"] = df["var3"].astype("int8")
+    # df["var4"] = df["var4"].astype("int8")
+
     # wstawianie df do tabeli
     insert_row_query = "INSERT INTO 02_logic(var1, var2, var3, var4) VALUES(%s, %s, %s, %s);"
     for row_number in range(len(df.index)):
