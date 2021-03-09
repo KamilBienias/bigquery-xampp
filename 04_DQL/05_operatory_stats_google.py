@@ -33,6 +33,9 @@ def fetch_financial_data(company='AMZN'):
 
 try:
     df = fetch_financial_data('GOOGL')
+    # df = fetch_financial_data('MSFT')
+    # domyslnie amazon
+    # df = fetch_financial_data()
     print("Stary index:")
     print(df.index)
     # kolumna Date byla indeksem, wiec trzeba zrobic zeby ona byla kolumna
