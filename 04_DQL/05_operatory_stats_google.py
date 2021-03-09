@@ -1,7 +1,7 @@
 # Etap8. Odcinek: Operatory arytmetyczne, porownania oraz logiczne
 
 # uruchamiac z terminala:
-# python3 05_operatory.py
+# python3 05_operatory_stats_google.py
 import pymysql
 import datetime
 import pandas as pd
