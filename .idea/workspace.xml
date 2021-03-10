@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421194c8-8d21-4d8a-9c1c-4db2808b8745" name="Default Changelist" comment="CAST, SAFE_CAST">
-      <change afterPath="$PROJECT_DIR$/05_funkcje/02_definiowanie_funkcji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_funkcje/02_definiowanie_funkcji.sql" afterDir="false" />
+    <list default="true" id="421194c8-8d21-4d8a-9c1c-4db2808b8745" name="Default Changelist" comment="CORR, COVAR_POP, COVAR_SAMP, STDDEV_POP, STDDEV, VARIANCE">
+      <change afterPath="$PROJECT_DIR$/05_funkcje/05_funkcje_rankingujace.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_funkcje/06_funkcje_matematyczne.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -378,7 +378,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615367907544</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="CREATE FUNCTION">
+      <created>1615368790809</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615368790809</updated>
+    </task>
+    <task id="LOCAL-00034" summary="COUNT, COUNTIF, ANY_VALUE, STRING_AGG">
+      <created>1615371628178</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1615371628178</updated>
+    </task>
+    <task id="LOCAL-00035" summary="CORR, COVAR_POP, COVAR_SAMP, STDDEV_POP, STDDEV, VARIANCE">
+      <created>1615372237323</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1615372237323</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,9 +415,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="wieksze wciecie przed print" />
-    <MESSAGE value="ponowna instalacja pymysql" />
     <MESSAGE value="zmiana tytulu" />
     <MESSAGE value="tablice" />
     <MESSAGE value="zmiana nazwy bazy" />
@@ -419,6 +437,9 @@
     <MESSAGE value="podzapytania" />
     <MESSAGE value="INNER lEFT RIGHT FULL CROSS JOIN" />
     <MESSAGE value="CAST, SAFE_CAST" />
-    <option name="LAST_COMMIT_MESSAGE" value="CAST, SAFE_CAST" />
+    <MESSAGE value="CREATE FUNCTION" />
+    <MESSAGE value="COUNT, COUNTIF, ANY_VALUE, STRING_AGG" />
+    <MESSAGE value="CORR, COVAR_POP, COVAR_SAMP, STDDEV_POP, STDDEV, VARIANCE" />
+    <option name="LAST_COMMIT_MESSAGE" value="CORR, COVAR_POP, COVAR_SAMP, STDDEV_POP, STDDEV, VARIANCE" />
   </component>
 </project>
