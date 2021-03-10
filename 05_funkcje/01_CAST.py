@@ -1,4 +1,4 @@
-# Etap8. Odcinek: Funkcja CAST
+# Etap9. Odcinek: Funkcja CAST
 
 # uruchamiac z terminala:
 # python3 01_CAST.py
