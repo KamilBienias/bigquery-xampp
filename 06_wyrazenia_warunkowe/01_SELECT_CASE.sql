@@ -1,4 +1,4 @@
--- Etap10. Odcinek:
+-- Etap10. Odcinek: Wyrazenie SELECT CASE
 
 -- Wyrażenia warunkowe
 
